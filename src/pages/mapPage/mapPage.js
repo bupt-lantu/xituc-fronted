@@ -52,7 +52,7 @@ export default class mapPage extends Component {
   }
 
   config = {
-    navigationBarTitleText: '沙邮智慧导览',
+    navigationBarTitleText: '北京邮电大学',
     disableScroll: true
   }
 
@@ -241,7 +241,12 @@ export default class mapPage extends Component {
       this.mpContext.moveToLocation()
     })
   }
- 
+  changeFunctionClose() {
+    this.setState({
+      functionClose: !this.state.functionClose
+    })
+  }
+
   render() {
     return (
       <View>

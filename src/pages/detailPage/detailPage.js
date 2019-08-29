@@ -111,24 +111,27 @@ export default class detailPage extends Component {
           </View>
           <View className="detail" style={"height:" + bottomHeight + "vh"}>
             <View className="palyerCountainer" >
-              <Audio
-                id="descPlayer"
-                className="player"
-                src={placeSound}
-                controls={true}
-                name={placeTitle}
-                author=' '
-                poster={placePicSource}
-                onClick={this.changeDiscAudioState}
-                className="soundPlayer"
-              />
+              {(placeDiscription != "*") && (
+                <Audio
+                  id="descPlayer"
+                  className="player"
+                  src={placeSound}
+                  controls={true}
+                  name={placeTitle}
+                  author=' '
+                  poster={placePicSource}
+                  onClick={this.changeDiscAudioState}
+                  className="soundPlayer"
+                />
+              )}
             </View>
 
-            <View className="placeDiscription" >
-              
+            {(placeDiscription != "*") && (
+              <View className="placeDiscription" >
                 {placeDiscription}
-      
-            </View>
+              </View>
+            )}
+
           </View>
         </View>
       </View>

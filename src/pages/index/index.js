@@ -7,7 +7,7 @@ export default class detailPage extends Component {
   state = {}
 
   config = {
-    navigationBarTitleText: '北京邮电大学沙河校区',
+    navigationBarTitleText: '北京邮电大学',
 
   }
 
@@ -63,7 +63,7 @@ export default class detailPage extends Component {
       <View >
         <Image src={coverPic} onClick={this.benbu} className='coverPic' />
         {/* <Image src={benbuu} className='xituc' onClick={this.shahe}></Image> */}
-        <Image src={shahee} className='shahe' onClick={this.benbu}></Image>
+        {/* <Image src={shahee} className='shahe' onClick={this.benbu}></Image> */}
         {/* <View className="zongheban">沙河校区综合办公室</View>
         <View className="lantu"> 计算机学院蓝图创新协会</View>
         <View className="lianhe"> 联合出品</View> */}

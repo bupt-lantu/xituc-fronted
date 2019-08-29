@@ -4,7 +4,6 @@
     overflow-y: scroll ;
     background-color: rgba(235, 235, 235, 0.5); 
     // background-color: red;
-
 }
 .placePicture{
     width: 750px;
@@ -14,12 +13,12 @@
 .navImage { 
     height:50px;  
     width:50px;     
-}   
+}    
 .titleGroup{  
     background:white;   
     display: flex;  
     flex-direction: row;   
-    align-items: center;    
+    align-items: center;     
     padding: 4%;      
     height: 7vh;  
 } 
